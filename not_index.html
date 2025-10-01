@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KyraaaVi Profile Web Page</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="profile">
+          <div class="prof-pic">
+            <img src="img/sidepic.jpg" alt="Foto Profil">
+          </div>
+          <p>KyraaaVi</p>
+        </div>
+        <nav class="menu">
+          <a href="index.html">???</a>
+          <a href="#hobbies">My Hobbies</a>
+          <a href="#jadwal">Schedules</a>
+          <!-- <a href="https://www.instagram.com/rizkyfadhillah1015/" target="_blank">Instagram</a>
+          <a href="https://github.com/SecrizMRF" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/m-rizky-fadhillah-7a0635363/" target="_blank">LinkedIn</a>
+          <a href="https://x.com/RavenNDove" target="_blank">X / Twitter</a>
+          <a href="https://wa.me/+6285157813566" target="_blank">Contact</a> -->
+        </nav>
+
+      </aside>
+      <!-- Main Content -->
+      <main class="content">
+        <!-- Tombol hamburger -->
+        <button class="hamburger" id="hamburger">☰</button>
+        <!-- <section id="Intro"> -->
+          <div class="text-container">
+            <div class="intro">
+              <h1>Nama saya <br>
+                <span>M. Rizky Fadhillah</span>
+              </h1>
+              <!-- <button href="documents/Portofolio.pdf" download="documents/Portofolio.pdf" class="btn">View Portfolio</button> -->
+               <a href="#" onclick="openAndDownloadPDF()" class="button">View Portfolio</a>
+            </div>
+            <div class="bio">
+              <!-- <h2>M. Rizky Fadhillah</h2> -->
+              <p>
+                <strong>NIM: 241401055</strong>
+              </p>
+              <p><strong>KOM: A</strong></p>
+              <!-- <p> Hello! I'm a Computer Science major student at the Universitas Sumatera Utara (USU).
+                 Aku suka untuk mempelajari hal-hal baru, karena aku selalu memegang prinsip,<br>
+                "There's always some space for improvement."<br> jadi aku selalu mencari celah,
+                di mana titik kelemahanku.</p> -->
+              <p> 
+                Hai!! Aku adalah seorang Mahasiswa prodi Ilmu Komputer di Universitas Sumatera Utara, atau USU.
+                Aku suka untuk mempelajari hal-hal baru, karena aku selalu memegang prinsip,
+              </p>
+              <p class="quotes">"There's always some space for improvement."</p>
+              <p> 
+                jadi aku selalu mencari celah,
+                di mana titik kelemahanku.
+              </p>
+            </div> 
+          </div>
+          <div class = "main-pic-container">
+          <img src="img/bio.png" alt="Foto Profil" class="main-pic">
+          </div>
+        </div>
+        
+        <!-- Section Hobbies dengan Cards -->
+        <section id="hobbies" class="hobbies-section">
+          <h2>Hobi-hobi Saya</h2>
+          <div class="hobby-cards">
+            <div class="hobby-card">
+              <img src="img/coding.jpg" alt="Coding">
+              <h3>Coding</h3>
+              <p>Aku sangat tertarik dengan pemrograman, dan aku selalu bertanya-tanya, "Ih! Gimana sih mereka bisa buat itu?". Dan aku berjanji ke diriku sendiri, Aku bakalan buat yang lebih bagus suatu saat nanti!</p>
+            </div>
+            <div class="hobby-card">
+              <img src="img/music.jpg" alt="Music">
+              <h3>Music</h3>
+              <p>Aku adalah pendengar yang baik, percayalah. Dengerin musik itu salah satu kesenangan bagi aku.</p>
+            </div>
+            <div class="hobby-card">
+              <img src="img/gaming.png" alt="Gaming">
+              <h3>Game</h3>
+              <p>Dan game.. udah pasti lah ya. Main game ini adalah hal untuk membuang-buang waktu paling menyenangkan. Walau main game kalau bisa curi-curi waktu aja (tugas numpuk lhoh ya).</p>
+            </div>
+          </div>
+        </section>
+        
+        <main class="container mx-auto px-6 py-12">
+          <section id="jadwal" class="section-content ">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Jadwal Kuliah</h2>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-purple-400 to-purple-400 text-white p-6">
+                        <h3 class="text-xl font-semibold">Semester 3</h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50">
+                              <tr>
+                                    <th class="px-6 py-4 text-left font-semibold text-gray-800">Hari</th>
+                                    <th class="px-6 py-4 text-left font-semibold text-gray-800">Waktu</th>
+                                    <th class="px-6 py-4 text-left font-semibold text-gray-800">Mata Kuliah</th>
+                                    <th class="px-6 py-4 text-left font-semibold text-gray-800">Ruangan</th>
+                                    <th class="px-6 py-4 text-left font-semibold text-gray-800">Dosen</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-gray-800">Senin</td>
+                                    <td class="px-6 py-4 text-gray-600">10:30 - 12:10</td>
+                                    <td class="px-6 py-4 text-gray-800">Sastra & Perfilman</td>
+                                    <td class="px-6 py-4 text-gray-600">O.103</td>
+                                    <td class="px-6 py-4 text-gray-600">Arie Azhari Nasution S.S., M.A.</td>
+                                  </tr>
+                                  <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-gray-800">Selasa</td>
+                                    <td class="px-6 py-4 text-gray-600">08:50 - 10:30</td>
+                                    <td class="px-6 py-4 text-gray-800">IELTS Preparation</td>
+                                    <td class="px-6 py-4 text-gray-600">Ruang 101</td>
+                                    <td class="px-6 py-4 text-gray-600">Drs. Yulianus Harefa GradDipEd TESOL., MEd TESOL</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-gray-800">Rabu</td>
+                                    <td class="px-6 py-4 text-gray-600">08:00 - 10:30</td>
+                                    <td class="px-6 py-4 text-gray-800">Pemrograman Web</td>
+                                    <td class="px-6 py-4 text-gray-600">Ruang 103</td>
+                                    <td class="px-6 py-4 text-gray-600">Dr. Dewi Sartika Br Ginting S.Kom., M.Kom</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                  <td class="px-6 py-4 font-medium text-gray-800">Rabu</td>
+                                  <td class="px-6 py-4 text-gray-600">14:40 - 17:10</td>
+                                  <td class="px-6 py-4 text-gray-800">Basis Data</td>
+                                    <td class="px-6 py-4 text-gray-600">Ruang 103</td>
+                                    <td class="px-6 py-4 text-gray-600">Insidini Fawwaz M.Kom</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-gray-800">Rabu</td>
+                                    <td class="px-6 py-4 text-gray-600">15:30 - 17:10</td>
+                                    <td class="px-6 py-4 text-gray-800">Etika Profesi</td>
+                                    <td class="px-6 py-4 text-gray-600">Ruang 101</td>
+                                    <td class="px-6 py-4 text-gray-600">Dr. Ir. Elviawaty Muisa Zamzami S.T., M.T., M.M., IPU</td>
+                                  </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-gray-800">Jumat</td>
+                                    <td class="px-6 py-4 text-gray-600">08:00 - 10:30</td>
+                                    <td class="px-6 py-4 text-gray-800">Wirausaha Digital</td>
+                                    <td class="px-6 py-4 text-gray-600">Ruang 104</td>
+                                    <td class="px-6 py-4 text-gray-600">Dr. T. Henny Febriana Harumy S.Kom., M.Kom</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                  <td class="px-6 py-4 font-medium text-gray-800">Jumat</td>
+                                  <td class="px-6 py-4 text-gray-600">13:50 - 16:20</td>
+                                    <td class="px-6 py-4 text-gray-800">Struktur Data</td>
+                                    <td class="px-6 py-4 text-gray-600">Ruang 101</td>
+                                    <td class="px-6 py-4 text-gray-600">Anandhini Medianty Nababan S.Kom., M.T</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-gray-800">-</td>
+                                    <td class="px-6 py-4 text-gray-600"><i>belum diset</i></td>
+                                    <td class="px-6 py-4 text-gray-800">Praktikum Basis Data</td>
+                                    <td class="px-6 py-4 text-gray-600">-</td>
+                                    <td class="px-6 py-4 text-gray-600">Insidini Fawwaz M.Kom</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="px-6 py-4 font-medium text-gray-800">-</td>
+                                    <td class="px-6 py-4 text-gray-600"><i>belum diset</i></td>
+                                    <td class="px-6 py-4 text-gray-800">Praktikum Pemprograman Web</td>
+                                    <td class="px-6 py-4 text-gray-600">-</td>
+                                    <td class="px-6 py-4 text-gray-600">Dr. Dewi Sartika Br Ginting S.Kom., M.Kom</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                  <td class="px-6 py-4 font-medium text-gray-800">-</td>
+                                    <td class="px-6 py-4 text-gray-600"><i>belum diset</i></td>
+                                    <td class="px-6 py-4 text-gray-800">Praktikum Struktur Data</td>
+                                    <td class="px-6 py-4 text-gray-600">-</td>
+                                    <td class="px-6 py-4 text-gray-600">Insidini Fawwaz M.Kom</td>
+                                </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                </div>
+            </div>
+        </section>
+      </main>
+      
+      </main>
+
+      <footer>
+        <div class="social-icons">
+          <a href="https://twitter.com/RavenNDove" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com/rizkyfadhillah1015" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/m-rizky-fadhillah-7a0635363/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/SecrizMRF" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <p>© 2024 Kyra was here</p>
+      </footer>
+
+
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
+
